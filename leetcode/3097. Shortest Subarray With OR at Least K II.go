@@ -1,3 +1,5 @@
+package leetcode
+
 func minimumSubarrayLength(nums []int, k int) int {
     n := len(nums)
     if n == 0 {
