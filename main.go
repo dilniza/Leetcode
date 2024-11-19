@@ -7,20 +7,27 @@ import (
 
 func main() {
 	code := []int{5, 7, 1, 4}
-	k := 3
-	res := leetcode.Decrypt(code, k)
-	fmt.Println(res)
-
-	code = []int{2, 4, 9, 3}
-	k = 2
-	res = leetcode.Decrypt(code, k)
-	fmt.Println(res)
-
-	code = []int{2, 4, 9, 3}
-	k = -2
-	res = leetcode.Decrypt(code, k)
+	k := 2
+	res := leetcode.MaximumSubarraySum(code, k)
 	fmt.Println(res)
 }
+
+// func main() {
+// 	code := []int{5, 7, 1, 4}
+// 	k := 3
+// 	res := leetcode.Decrypt(code, k)
+// 	fmt.Println(res)
+
+// 	code = []int{2, 4, 9, 3}
+// 	k = 2
+// 	res = leetcode.Decrypt(code, k)
+// 	fmt.Println(res)
+
+// 	code = []int{2, 4, 9, 3}
+// 	k = -2
+// 	res = leetcode.Decrypt(code, k)
+// 	fmt.Println(res)
+// }
 
 // func main() {
 // 	var nums []int
