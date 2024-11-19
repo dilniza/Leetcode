@@ -10,6 +10,11 @@ func main() {
 	k := 2
 	res := leetcode.MaximumSubarraySum(code, k)
 	fmt.Println(res)
+
+	code = []int{4, 4, 4}
+	k = 3
+	res = leetcode.MaximumSubarraySum(code, k)
+	fmt.Println(res)
 }
 
 // func main() {
