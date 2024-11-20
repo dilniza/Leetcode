@@ -6,16 +6,28 @@ import (
 )
 
 func main() {
-	code := []int{5, 7, 1, 4}
+	s := "abc"
 	k := 2
-	res := leetcode.MaximumSubarraySum(code, k)
+	res := leetcode.TakeCharacters(s, k)
 	fmt.Println(res)
 
-	code = []int{4, 4, 4}
+	s = "abc"
 	k = 3
-	res = leetcode.MaximumSubarraySum(code, k)
+	res = leetcode.TakeCharacters(s, k)
 	fmt.Println(res)
 }
+
+// func main() {
+// 	code := []int{5, 7, 1, 4}
+// 	k := 2
+// 	res := leetcode.MaximumSubarraySum(code, k)
+// 	fmt.Println(res)
+
+// 	code = []int{4, 4, 4}
+// 	k = 3
+// 	res = leetcode.MaximumSubarraySum(code, k)
+// 	fmt.Println(res)
+// }
 
 // func main() {
 // 	code := []int{5, 7, 1, 4}
