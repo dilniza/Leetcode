@@ -6,16 +6,40 @@ import (
 )
 
 func main() {
-	s := "abc"
-	k := 2
-	res := leetcode.TakeCharacters(s, k)
+	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	res := leetcode.MaxMatrixSum(matrix)
 	fmt.Println(res)
 
-	s = "abc"
-	k = 3
-	res = leetcode.TakeCharacters(s, k)
+	matrix = [][]int{{1, -1}, {-1, 1}}
+	res = leetcode.MaxMatrixSum(matrix)
 	fmt.Println(res)
-}
+
+	box := [][]byte{{'#', '.', '*', '.'}, {'#', '#', '*', '.'}}
+	res1 := leetcode.RotateTheBox(box)
+	fmt.Println(box)
+	fmt.Println(res1)
+
+	box = [][]byte{{'#', '.', '#'}}
+	res1 = leetcode.RotateTheBox(box)
+	fmt.Println(res1)
+
+	target := 5
+	nums := []int{1, 2, 3, 4}
+	res2 := leetcode.TwoSum(nums, target)
+	fmt.Println(res2)
+}	
+
+// func main() {
+// 	s := "abc"
+// 	k := 2
+// 	res := leetcode.TakeCharacters(s, k)
+// 	fmt.Println(res)
+
+// 	s = "abc"
+// 	k = 3
+// 	res = leetcode.TakeCharacters(s, k)
+// 	fmt.Println(res)
+// }
 
 // func main() {
 // 	code := []int{5, 7, 1, 4}
