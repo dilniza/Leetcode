@@ -6,28 +6,42 @@ import (
 )
 
 func main() {
-	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
-	res := leetcode.MaxMatrixSum(matrix)
-	fmt.Println(res)
+	board := [][]int{{1,2,3}, {4,0,5}}
+	move := leetcode.SlidingPuzzle(board)
+	fmt.Println(board, "moves: ", move)
 
-	matrix = [][]int{{1, -1}, {-1, 1}}
-	res = leetcode.MaxMatrixSum(matrix)
-	fmt.Println(res)
+	board = [][]int{{1,2,3}, {5,4,0}}
+	move = leetcode.SlidingPuzzle(board)
+	fmt.Println(board, "moves: ", move)
 
-	box := [][]byte{{'#', '.', '*', '.'}, {'#', '#', '*', '.'}}
-	res1 := leetcode.RotateTheBox(box)
-	fmt.Println(box)
-	fmt.Println(res1)
+	board = [][]int{{4,1,2}, {5,0,3}}
+	move = leetcode.SlidingPuzzle(board)
+	fmt.Println(board, "moves: ", move)
+}
 
-	box = [][]byte{{'#', '.', '#'}}
-	res1 = leetcode.RotateTheBox(box)
-	fmt.Println(res1)
+// func main() {
+// 	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+// 	res := leetcode.MaxMatrixSum(matrix)
+// 	fmt.Println(res)
 
-	target := 5
-	nums := []int{1, 2, 3, 4}
-	res2 := leetcode.TwoSum(nums, target)
-	fmt.Println(res2)
-}	
+// 	matrix = [][]int{{1, -1}, {-1, 1}}
+// 	res = leetcode.MaxMatrixSum(matrix)
+// 	fmt.Println(res)
+
+// 	box := [][]byte{{'#', '.', '*', '.'}, {'#', '#', '*', '.'}}
+// 	res1 := leetcode.RotateTheBox(box)
+// 	fmt.Println(box)
+// 	fmt.Println(res1)
+
+// 	box = [][]byte{{'#', '.', '#'}}
+// 	res1 = leetcode.RotateTheBox(box)
+// 	fmt.Println(res1)
+
+// 	target := 5
+// 	nums := []int{1, 2, 3, 4}
+// 	res2 := leetcode.TwoSum(nums, target)
+// 	fmt.Println(res2)
+// }
 
 // func main() {
 // 	s := "abc"
