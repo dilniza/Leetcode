@@ -6,18 +6,22 @@ import (
 )
 
 func main() {
-	board := [][]int{{1,2,3}, {4,0,5}}
-	move := leetcode.SlidingPuzzle(board)
-	fmt.Println(board, "moves: ", move)
-
-	board = [][]int{{1,2,3}, {5,4,0}}
-	move = leetcode.SlidingPuzzle(board)
-	fmt.Println(board, "moves: ", move)
-
-	board = [][]int{{4,1,2}, {5,0,3}}
-	move = leetcode.SlidingPuzzle(board)
-	fmt.Println(board, "moves: ", move)
+	
 }
+
+// func main() {
+// 	board := [][]int{{1,2,3}, {4,0,5}}
+// 	move := leetcode.SlidingPuzzle(board)
+// 	fmt.Println(board, "moves: ", move)
+
+// 	board = [][]int{{1,2,3}, {5,4,0}}
+// 	move = leetcode.SlidingPuzzle(board)
+// 	fmt.Println(board, "moves: ", move)
+
+// 	board = [][]int{{4,1,2}, {5,0,3}}
+// 	move = leetcode.SlidingPuzzle(board)
+// 	fmt.Println(board, "moves: ", move)
+// }
 
 // func main() {
 // 	matrix := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
