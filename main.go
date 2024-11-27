@@ -6,16 +6,23 @@ import (
 )
 
 func main() {
-	n := 3
-	edges := [][]int{{1, 2}, {2, 3}}
-	res := leetcode.FindChampion(n, edges)
-	fmt.Println(res)
-
-	n = 4
-	edges = [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 1}}
-	res = leetcode.FindChampion(n, edges)
+	queries := [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 5}}
+	n := 5
+	res := leetcode.ShortestDistanceAfterQueries(n, queries)
 	fmt.Println(res)
 }
+
+// func main() {
+// 	n := 3
+// 	edges := [][]int{{1, 2}, {2, 3}}
+// 	res := leetcode.FindChampion(n, edges)
+// 	fmt.Println(res)
+
+// 	n = 4
+// 	edges = [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 1}}
+// 	res = leetcode.FindChampion(n, edges)
+// 	fmt.Println(res)
+// }
 
 // func main() {
 // 	board := [][]int{{1,2,3}, {4,0,5}}
