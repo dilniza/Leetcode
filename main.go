@@ -6,11 +6,21 @@ import (
 )
 
 func main() {
-	queries := [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 5}}
-	n := 5
-	res := leetcode.ShortestDistanceAfterQueries(n, queries)
+	grid := [][]int{{0, 1, 1}, {1, 1, 1}, {1, 1, 0}}
+	res := leetcode.MinimumObstacles(grid)
+	fmt.Println(res)
+
+	grid = [][]int{{0, 1, 1}, {1, 1, 0}}
+	res = leetcode.MinimumObstacles(grid)
 	fmt.Println(res)
 }
+
+// func main() {
+// 	queries := [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 5}}
+// 	n := 5
+// 	res := leetcode.ShortestDistanceAfterQueries(n, queries)
+// 	fmt.Println(res)
+// }
 
 // func main() {
 // 	n := 3
